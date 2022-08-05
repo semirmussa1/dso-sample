@@ -10,8 +10,8 @@ COPY package*.json ./
 
 # RUN npm cache clean --force
 RUN rm -rf ~/.npm
-RUN npm update
-RUN npm cache verify
+#RUN npm update
+#RUN npm cache verify
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production

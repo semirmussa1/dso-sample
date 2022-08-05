@@ -9,6 +9,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm cache clean --force
+RUN rm -f ~/.npm
 RUN npm update
 RUN npm cache verify
 RUN npm install

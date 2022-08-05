@@ -8,8 +8,8 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm cache clean --force
-RUN rm -f ~/.npm
+# RUN npm cache clean --force
+RUN rm -rf ~/.npm
 RUN npm update
 RUN npm cache verify
 RUN npm install

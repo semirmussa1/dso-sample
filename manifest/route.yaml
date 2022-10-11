@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: dso-sample
-  namespace: dso-sample
+  namespace: argocd-managed11
   labels:
     app: dso-sample
     app.kubernetes.io/component: dso-sample
@@ -13,7 +13,6 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
 spec:
-  host: dso-sample-dso-sample.apps.ocp2.azure.dso.digital.mod.uk
   to:
     kind: Service
     name: dso-sample

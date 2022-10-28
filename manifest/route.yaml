@@ -2,7 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: dso-sample
-  namespace: argocd-managed11
+  namespace: pen-test
   labels:
     app: dso-sample
     app.kubernetes.io/component: dso-sample
